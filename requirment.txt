@@ -1,0 +1,48 @@
+# ─────────────────────────────────────────────
+# Requirements for Fine-Tuning Qwen2-VL (QLoRA)
+# Project: https://github.com/shlokchorge2929/Fine-Tuning-QWEN2vl
+# Python >= 3.10 | CUDA >= 11.8
+# ─────────────────────────────────────────────
+
+# ── Core: Unsloth (fast LoRA training) ────────
+unsloth[colab-new]>=2024.3
+
+# ── HuggingFace Stack ─────────────────────────
+transformers>=4.45.0
+datasets>=2.18.0
+huggingface_hub>=0.22.0
+tokenizers>=0.19.0
+accelerate>=0.30.0
+
+# ── PEFT (LoRA / QLoRA adapters) ──────────────
+peft>=0.10.0
+
+# ── TRL (Training with RL / SFT Trainer) ──────
+trl>=0.9.0
+
+# ── Quantization (4-bit NF4) ──────────────────
+bitsandbytes>=0.43.0
+
+# ── Vision / Image Processing ─────────────────
+Pillow>=10.0.0
+torchvision>=0.17.0
+
+# ── PyTorch (install separately for your CUDA version)
+# Visit https://pytorch.org/get-started/locally/
+# Example for CUDA 12.1:
+# pip install torch>=2.2.0 --index-url https://download.pytorch.org/whl/cu121
+torch>=2.2.0
+
+# ── Memory Optimization ───────────────────────
+xformers>=0.0.25
+
+# ── Serialization / Export ────────────────────
+safetensors>=0.4.2
+
+# ── Notebook / Utility ────────────────────────
+ipykernel>=6.29.0
+ipywidgets>=8.1.0
+tqdm>=4.66.0
+
+# ── Optional: Weights & Biases (training logs) ─
+# wandb>=0.16.0
