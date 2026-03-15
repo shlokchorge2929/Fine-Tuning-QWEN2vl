@@ -413,7 +413,7 @@ Contributions are welcome. Here is how to get started:
 
 ## License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
 
 The base **Qwen2-VL** model is subject to its own license. Please review [Qwen2-VL's license on Hugging Face](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct) before commercial use.
 
